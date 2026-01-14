@@ -57,7 +57,7 @@ app.get('/api/orders', async (req, res) => {
                 o.qty,
                 p.price
             FROM
-                order o
+                orders o
             JOIN
                 customer c ON o.customer_id = c.customer_id
             JOIN
